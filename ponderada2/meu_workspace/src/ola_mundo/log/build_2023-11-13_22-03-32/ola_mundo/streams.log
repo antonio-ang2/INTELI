@@ -1,0 +1,43 @@
+[0.468s] Invoking command in '/home/antonio/Documents/Github/entregas/m-8/meu_workspace/src/ola_mundo': PYTHONPATH=/home/antonio/Documents/Github/entregas/m-8/meu_workspace/src/ola_mundo/build/ola_mundo/prefix_override:/home/antonio/Documents/Github/entregas/m-8/meu_workspace/src/ola_mundo/install/ola_mundo/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base build/ola_mundo build --build-base /home/antonio/Documents/Github/entregas/m-8/meu_workspace/src/ola_mundo/build/ola_mundo/build install --record /home/antonio/Documents/Github/entregas/m-8/meu_workspace/src/ola_mundo/build/ola_mundo/install.log --single-version-externally-managed
+[0.615s] running egg_info
+[0.615s] creating build/ola_mundo/ola_mundo.egg-info
+[0.616s] writing build/ola_mundo/ola_mundo.egg-info/PKG-INFO
+[0.616s] writing dependency_links to build/ola_mundo/ola_mundo.egg-info/dependency_links.txt
+[0.616s] writing entry points to build/ola_mundo/ola_mundo.egg-info/entry_points.txt
+[0.616s] writing requirements to build/ola_mundo/ola_mundo.egg-info/requires.txt
+[0.616s] writing top-level names to build/ola_mundo/ola_mundo.egg-info/top_level.txt
+[0.616s] writing manifest file 'build/ola_mundo/ola_mundo.egg-info/SOURCES.txt'
+[0.617s] reading manifest file 'build/ola_mundo/ola_mundo.egg-info/SOURCES.txt'
+[0.617s] writing manifest file 'build/ola_mundo/ola_mundo.egg-info/SOURCES.txt'
+[0.617s] running build
+[0.617s] running build_py
+[0.618s] creating /home/antonio/Documents/Github/entregas/m-8/meu_workspace/src/ola_mundo/build/ola_mundo/build
+[0.618s] creating /home/antonio/Documents/Github/entregas/m-8/meu_workspace/src/ola_mundo/build/ola_mundo/build/lib
+[0.618s] creating /home/antonio/Documents/Github/entregas/m-8/meu_workspace/src/ola_mundo/build/ola_mundo/build/lib/ola_mundo
+[0.618s] copying ola_mundo/navigation.py -> /home/antonio/Documents/Github/entregas/m-8/meu_workspace/src/ola_mundo/build/ola_mundo/build/lib/ola_mundo
+[0.618s] copying ola_mundo/__init__.py -> /home/antonio/Documents/Github/entregas/m-8/meu_workspace/src/ola_mundo/build/ola_mundo/build/lib/ola_mundo
+[0.618s] copying ola_mundo/ola.py -> /home/antonio/Documents/Github/entregas/m-8/meu_workspace/src/ola_mundo/build/ola_mundo/build/lib/ola_mundo
+[0.618s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[0.618s]   warnings.warn(
+[0.618s] running install
+[0.618s] running install_lib
+[0.619s] creating /home/antonio/Documents/Github/entregas/m-8/meu_workspace/src/ola_mundo/install/ola_mundo/lib/python3.10/site-packages/ola_mundo
+[0.619s] copying /home/antonio/Documents/Github/entregas/m-8/meu_workspace/src/ola_mundo/build/ola_mundo/build/lib/ola_mundo/navigation.py -> /home/antonio/Documents/Github/entregas/m-8/meu_workspace/src/ola_mundo/install/ola_mundo/lib/python3.10/site-packages/ola_mundo
+[0.619s] copying /home/antonio/Documents/Github/entregas/m-8/meu_workspace/src/ola_mundo/build/ola_mundo/build/lib/ola_mundo/__init__.py -> /home/antonio/Documents/Github/entregas/m-8/meu_workspace/src/ola_mundo/install/ola_mundo/lib/python3.10/site-packages/ola_mundo
+[0.619s] copying /home/antonio/Documents/Github/entregas/m-8/meu_workspace/src/ola_mundo/build/ola_mundo/build/lib/ola_mundo/ola.py -> /home/antonio/Documents/Github/entregas/m-8/meu_workspace/src/ola_mundo/install/ola_mundo/lib/python3.10/site-packages/ola_mundo
+[0.619s] byte-compiling /home/antonio/Documents/Github/entregas/m-8/meu_workspace/src/ola_mundo/install/ola_mundo/lib/python3.10/site-packages/ola_mundo/navigation.py to navigation.cpython-310.pyc
+[0.619s] byte-compiling /home/antonio/Documents/Github/entregas/m-8/meu_workspace/src/ola_mundo/install/ola_mundo/lib/python3.10/site-packages/ola_mundo/__init__.py to __init__.cpython-310.pyc
+[0.619s] byte-compiling /home/antonio/Documents/Github/entregas/m-8/meu_workspace/src/ola_mundo/install/ola_mundo/lib/python3.10/site-packages/ola_mundo/ola.py to ola.cpython-310.pyc
+[0.620s] running install_data
+[0.620s] creating /home/antonio/Documents/Github/entregas/m-8/meu_workspace/src/ola_mundo/install/ola_mundo/share/ament_index
+[0.620s] creating /home/antonio/Documents/Github/entregas/m-8/meu_workspace/src/ola_mundo/install/ola_mundo/share/ament_index/resource_index
+[0.620s] creating /home/antonio/Documents/Github/entregas/m-8/meu_workspace/src/ola_mundo/install/ola_mundo/share/ament_index/resource_index/packages
+[0.620s] copying resource/ola_mundo -> /home/antonio/Documents/Github/entregas/m-8/meu_workspace/src/ola_mundo/install/ola_mundo/share/ament_index/resource_index/packages
+[0.620s] copying package.xml -> /home/antonio/Documents/Github/entregas/m-8/meu_workspace/src/ola_mundo/install/ola_mundo/share/ola_mundo
+[0.620s] running install_egg_info
+[0.621s] Copying build/ola_mundo/ola_mundo.egg-info to /home/antonio/Documents/Github/entregas/m-8/meu_workspace/src/ola_mundo/install/ola_mundo/lib/python3.10/site-packages/ola_mundo-0.0.0-py3.10.egg-info
+[0.622s] running install_scripts
+[0.637s] Installing navigation script to /home/antonio/Documents/Github/entregas/m-8/meu_workspace/src/ola_mundo/install/ola_mundo/lib/ola_mundo
+[0.637s] Installing ola script to /home/antonio/Documents/Github/entregas/m-8/meu_workspace/src/ola_mundo/install/ola_mundo/lib/ola_mundo
+[0.638s] writing list of installed files to '/home/antonio/Documents/Github/entregas/m-8/meu_workspace/src/ola_mundo/build/ola_mundo/install.log'
+[0.656s] Invoked command in '/home/antonio/Documents/Github/entregas/m-8/meu_workspace/src/ola_mundo' returned '0': PYTHONPATH=/home/antonio/Documents/Github/entregas/m-8/meu_workspace/src/ola_mundo/build/ola_mundo/prefix_override:/home/antonio/Documents/Github/entregas/m-8/meu_workspace/src/ola_mundo/install/ola_mundo/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base build/ola_mundo build --build-base /home/antonio/Documents/Github/entregas/m-8/meu_workspace/src/ola_mundo/build/ola_mundo/build install --record /home/antonio/Documents/Github/entregas/m-8/meu_workspace/src/ola_mundo/build/ola_mundo/install.log --single-version-externally-managed

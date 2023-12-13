@@ -1,0 +1,4 @@
+[console_scripts]
+navigation = ola_mundo.navigation:main
+ola = ola_mundo.ola:main
+

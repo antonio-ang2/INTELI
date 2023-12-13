@@ -1,0 +1,21 @@
+[0.648s] Invoking command in '/home/antonio/Documents/Github/entregas/m-8/ponderada2/meu_workspace/src/ola_mundo': PYTHONPATH=/home/antonio/Documents/Github/entregas/m-8/ponderada2/meu_workspace/build/ola_mundo/prefix_override:/home/antonio/Documents/Github/entregas/m-8/ponderada2/meu_workspace/install/ola_mundo/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/ola_mundo build --build-base /home/antonio/Documents/Github/entregas/m-8/ponderada2/meu_workspace/build/ola_mundo/build install --record /home/antonio/Documents/Github/entregas/m-8/ponderada2/meu_workspace/build/ola_mundo/install.log --single-version-externally-managed
+[0.836s] running egg_info
+[0.836s] writing ../../build/ola_mundo/ola_mundo.egg-info/PKG-INFO
+[0.836s] writing dependency_links to ../../build/ola_mundo/ola_mundo.egg-info/dependency_links.txt
+[0.836s] writing entry points to ../../build/ola_mundo/ola_mundo.egg-info/entry_points.txt
+[0.837s] writing requirements to ../../build/ola_mundo/ola_mundo.egg-info/requires.txt
+[0.837s] writing top-level names to ../../build/ola_mundo/ola_mundo.egg-info/top_level.txt
+[0.838s] reading manifest file '../../build/ola_mundo/ola_mundo.egg-info/SOURCES.txt'
+[0.842s] writing manifest file '../../build/ola_mundo/ola_mundo.egg-info/SOURCES.txt'
+[0.842s] running build
+[0.842s] running build_py
+[0.843s] running install
+[0.843s] running install_lib
+[0.844s] running install_data
+[0.844s] running install_egg_info
+[0.845s] removing '/home/antonio/Documents/Github/entregas/m-8/ponderada2/meu_workspace/install/ola_mundo/lib/python3.10/site-packages/ola_mundo-0.0.0-py3.10.egg-info' (and everything under it)
+[0.846s] Copying ../../build/ola_mundo/ola_mundo.egg-info to /home/antonio/Documents/Github/entregas/m-8/ponderada2/meu_workspace/install/ola_mundo/lib/python3.10/site-packages/ola_mundo-0.0.0-py3.10.egg-info
+[0.847s] running install_scripts
+[0.860s] Installing ola script to /home/antonio/Documents/Github/entregas/m-8/ponderada2/meu_workspace/install/ola_mundo/lib/ola_mundo
+[0.860s] writing list of installed files to '/home/antonio/Documents/Github/entregas/m-8/ponderada2/meu_workspace/build/ola_mundo/install.log'
+[0.879s] Invoked command in '/home/antonio/Documents/Github/entregas/m-8/ponderada2/meu_workspace/src/ola_mundo' returned '0': PYTHONPATH=/home/antonio/Documents/Github/entregas/m-8/ponderada2/meu_workspace/build/ola_mundo/prefix_override:/home/antonio/Documents/Github/entregas/m-8/ponderada2/meu_workspace/install/ola_mundo/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/ola_mundo build --build-base /home/antonio/Documents/Github/entregas/m-8/ponderada2/meu_workspace/build/ola_mundo/build install --record /home/antonio/Documents/Github/entregas/m-8/ponderada2/meu_workspace/build/ola_mundo/install.log --single-version-externally-managed

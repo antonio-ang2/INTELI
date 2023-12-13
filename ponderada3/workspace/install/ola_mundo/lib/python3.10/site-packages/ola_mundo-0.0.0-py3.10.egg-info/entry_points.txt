@@ -1,0 +1,3 @@
+[console_scripts]
+chat = ola_mundo.chat:main
+
