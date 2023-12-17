@@ -1,0 +1,1278 @@
+2023-09-13 22:17:55,512:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-13 22:17:55,515:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-13 22:17:55,515:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-13 22:17:55,515:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-13 22:17:56,349:INFO:Initializing load_model()
+2023-09-13 22:17:56,349:INFO:load_model(model_name=minha_api, platform=None, authentication=None, verbose=True)
+2023-09-13 22:17:56,369:WARNING:C:\Users\Inteli\AppData\Local\Programs\Python\Python310\lib\site-packages\pycaret\internal\pipeline.py:139: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '22.2.1', 'setuptools': '63.2.0', 'pycaret': '3.1.0', 'IPython': '8.14.0', 'ipywidgets': '8.1.0', 'tqdm': '4.66.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.0', 'imblearn': '0.11.0', 'category_encoders': '2.6.2', 'lightgbm': '4.1.0', 'numba': '0.57.1', 'requests': '2.31.0', 'matplotlib': '3.7.2', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.16.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.0', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.5', 'markupsafe': '2.1.2', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.3.0', 'wurlitzer': 'Not installed'}, 'python': {'version': '3.10.6', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.1.0', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.0', 'imblearn': '0.10.1', 'category_encoders': '2.6.2', 'lightgbm': '4.0.0', 'numba': '0.56.4', 'requests': '2.31.0', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.0', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.5', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.3.0', 'wurlitzer': '3.0.3'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2023-09-13 22:18:09,319:WARNING:C:\Users\Inteli\Documents\GitHub\entregas\módulo 7\semana 5\minha_api.py:27: PydanticDeprecatedSince20: The `dict` method is deprecated; use `model_dump` instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.3/migration/
+  data_dict = data.dict()
+
+2023-09-13 22:18:09,397:INFO:Initializing predict_model()
+2023-09-13 22:18:09,397:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x00000282AE707AF0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['Age', 'Income'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['Gender'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['Gender'],
+                                    transformer=OrdinalEncoder(cols=['Gender'],
+                                                               handle_missing='return_nan',
+                                                               mapping=[{'col': 'Gender',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Female    0
+Male      1
+NaN      -1
+dtype: int64}]))),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames())),
+                ('trained_model',
+                 GradientBoostingRegressor(random_state=5681))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x00000282AE6FEEF0>)
+2023-09-13 22:18:09,397:INFO:Checking exceptions
+2023-09-13 22:18:09,397:INFO:Preloading libraries
+2023-09-13 22:18:09,397:INFO:Set up data.
+2023-09-13 22:18:09,405:INFO:Set up index.
+2023-09-13 22:21:15,190:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-13 22:21:15,190:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-13 22:21:15,190:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-13 22:21:15,190:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-13 22:21:15,936:INFO:Initializing load_model()
+2023-09-13 22:21:15,936:INFO:load_model(model_name=minha_api, platform=None, authentication=None, verbose=True)
+2023-09-13 22:21:15,960:WARNING:C:\Users\Inteli\AppData\Local\Programs\Python\Python310\lib\site-packages\pycaret\internal\pipeline.py:139: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '22.2.1', 'setuptools': '63.2.0', 'pycaret': '3.1.0', 'IPython': '8.14.0', 'ipywidgets': '8.1.0', 'tqdm': '4.66.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.0', 'imblearn': '0.11.0', 'category_encoders': '2.6.2', 'lightgbm': '4.1.0', 'numba': '0.57.1', 'requests': '2.31.0', 'matplotlib': '3.7.2', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.16.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.0', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.5', 'markupsafe': '2.1.2', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.3.0', 'wurlitzer': 'Not installed'}, 'python': {'version': '3.10.6', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.1.0', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.0', 'imblearn': '0.10.1', 'category_encoders': '2.6.2', 'lightgbm': '4.0.0', 'numba': '0.56.4', 'requests': '2.31.0', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.0', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.5', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.3.0', 'wurlitzer': '3.0.3'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2023-09-14 10:50:13,489:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-14 10:50:13,489:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-14 10:50:13,489:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-14 10:50:13,489:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-14 10:50:14,424:INFO:Initializing load_model()
+2023-09-14 10:50:14,424:INFO:load_model(model_name=minha_api, platform=None, authentication=None, verbose=True)
+2023-09-14 10:50:14,476:WARNING:C:\Users\Inteli\AppData\Local\Programs\Python\Python310\lib\site-packages\pycaret\internal\pipeline.py:139: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '22.2.1', 'setuptools': '63.2.0', 'pycaret': '3.1.0', 'IPython': '8.14.0', 'ipywidgets': '8.1.0', 'tqdm': '4.66.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.0', 'imblearn': '0.11.0', 'category_encoders': '2.6.2', 'lightgbm': '4.1.0', 'numba': '0.57.1', 'requests': '2.31.0', 'matplotlib': '3.7.2', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.16.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.0', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.5', 'markupsafe': '2.1.2', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.3.0', 'wurlitzer': 'Not installed'}, 'python': {'version': '3.10.6', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.1.0', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.0', 'imblearn': '0.10.1', 'category_encoders': '2.6.2', 'lightgbm': '4.0.0', 'numba': '0.56.4', 'requests': '2.31.0', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.0', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.5', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.3.0', 'wurlitzer': '3.0.3'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2023-09-14 10:50:53,049:WARNING:C:\Users\Inteli\Documents\GitHub\entregas\módulo 7\semana 5\minha_api.py:27: PydanticDeprecatedSince20: The `dict` method is deprecated; use `model_dump` instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.3/migration/
+  data_dict = data.dict()
+
+2023-09-14 10:50:53,090:INFO:Initializing predict_model()
+2023-09-14 10:50:53,094:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x00000200A2087AF0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['Age', 'Income'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['Gender'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['Gender'],
+                                    transformer=OrdinalEncoder(cols=['Gender'],
+                                                               handle_missing='return_nan',
+                                                               mapping=[{'col': 'Gender',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Female    0
+Male      1
+NaN      -1
+dtype: int64}]))),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames())),
+                ('trained_model',
+                 GradientBoostingRegressor(random_state=5681))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x00000200A207EF80>)
+2023-09-14 10:50:53,094:INFO:Checking exceptions
+2023-09-14 10:50:53,094:INFO:Preloading libraries
+2023-09-14 10:50:53,098:INFO:Set up data.
+2023-09-14 10:50:53,109:INFO:Set up index.
+2023-09-28 00:06:57,480:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-28 00:06:57,480:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-28 00:06:57,480:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-28 00:06:57,480:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-28 00:08:27,537:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-28 00:08:27,542:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-28 00:08:27,542:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-28 00:08:27,542:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-28 13:10:09,328:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-28 13:10:09,344:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-28 13:10:09,344:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-28 13:10:09,344:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-28 14:20:50,111:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-28 14:20:50,111:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-28 14:20:50,111:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-28 14:20:50,111:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-28 14:22:07,986:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-28 14:22:07,986:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-28 14:22:07,986:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-28 14:22:07,986:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-28 14:22:08,656:INFO:Initializing load_model()
+2023-09-28 14:22:08,656:INFO:load_model(model_name=minha_api, platform=None, authentication=None, verbose=True)
+2023-09-28 14:22:11,164:WARNING:C:\Users\Inteli\AppData\Local\Programs\Python\Python310\lib\site-packages\pycaret\internal\pipeline.py:139: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '23.2.1', 'setuptools': '63.2.0', 'pycaret': '3.1.0', 'IPython': '8.14.0', 'ipywidgets': '8.1.0', 'tqdm': '4.66.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.0', 'imblearn': '0.11.0', 'category_encoders': '2.6.2', 'lightgbm': '4.1.0', 'numba': '0.57.1', 'requests': '2.31.0', 'matplotlib': '3.7.2', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.16.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.0', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.5', 'markupsafe': '2.1.2', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.3.0', 'wurlitzer': 'Not installed'}, 'python': {'version': '3.10.6', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.1.0', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.0', 'imblearn': '0.10.1', 'category_encoders': '2.6.2', 'lightgbm': '4.0.0', 'numba': '0.56.4', 'requests': '2.31.0', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.0', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.5', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.3.0', 'wurlitzer': '3.0.3'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2023-09-28 14:22:54,409:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-28 14:22:54,409:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-28 14:22:54,409:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-28 14:22:54,409:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-28 14:22:54,994:INFO:Initializing load_model()
+2023-09-28 14:22:54,994:INFO:load_model(model_name=minha_api, platform=None, authentication=None, verbose=True)
+2023-09-28 14:22:55,025:WARNING:C:\Users\Inteli\AppData\Local\Programs\Python\Python310\lib\site-packages\pycaret\internal\pipeline.py:139: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '23.2.1', 'setuptools': '63.2.0', 'pycaret': '3.1.0', 'IPython': '8.14.0', 'ipywidgets': '8.1.0', 'tqdm': '4.66.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.0', 'imblearn': '0.11.0', 'category_encoders': '2.6.2', 'lightgbm': '4.1.0', 'numba': '0.57.1', 'requests': '2.31.0', 'matplotlib': '3.7.2', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.16.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.0', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.5', 'markupsafe': '2.1.2', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.3.0', 'wurlitzer': 'Not installed'}, 'python': {'version': '3.10.6', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.1.0', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.0', 'imblearn': '0.10.1', 'category_encoders': '2.6.2', 'lightgbm': '4.0.0', 'numba': '0.56.4', 'requests': '2.31.0', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.0', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.5', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.3.0', 'wurlitzer': '3.0.3'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2023-09-28 14:23:25,340:INFO:Initializing predict_model()
+2023-09-28 14:23:25,340:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000018766A25F90>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['Age', 'Income'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['Gender'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['Gender'],
+                                    transformer=OrdinalEncoder(cols=['Gender'],
+                                                               handle_missing='return_nan',
+                                                               mapping=[{'col': 'Gender',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Female    0
+Male      1
+NaN      -1
+dtype: int64}]))),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames())),
+                ('trained_model',
+                 GradientBoostingRegressor(random_state=5681))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x00000187669D5E10>)
+2023-09-28 14:23:25,340:INFO:Checking exceptions
+2023-09-28 14:23:25,340:INFO:Preloading libraries
+2023-09-28 14:23:25,340:INFO:Set up data.
+2023-09-28 14:23:25,355:INFO:Set up index.
+2023-09-28 14:27:20,533:INFO:Initializing predict_model()
+2023-09-28 14:27:20,533:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000018766A24BB0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['Age', 'Income'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['Gender'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['Gender'],
+                                    transformer=OrdinalEncoder(cols=['Gender'],
+                                                               handle_missing='return_nan',
+                                                               mapping=[{'col': 'Gender',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Female    0
+Male      1
+NaN      -1
+dtype: int64}]))),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames())),
+                ('trained_model',
+                 GradientBoostingRegressor(random_state=5681))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000018766A2DD80>)
+2023-09-28 14:27:20,533:INFO:Checking exceptions
+2023-09-28 14:27:20,533:INFO:Preloading libraries
+2023-09-28 14:27:20,543:INFO:Set up data.
+2023-09-28 14:27:20,543:INFO:Set up index.
+2023-09-28 15:04:34,473:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-28 15:04:34,473:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-28 15:04:34,473:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-28 15:04:34,473:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-28 15:04:35,124:INFO:Initializing load_model()
+2023-09-28 15:04:35,124:INFO:load_model(model_name=minha_api, platform=None, authentication=None, verbose=True)
+2023-09-28 15:04:35,150:WARNING:C:\Users\Inteli\AppData\Local\Programs\Python\Python310\lib\site-packages\pycaret\internal\pipeline.py:139: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '23.2.1', 'setuptools': '63.2.0', 'pycaret': '3.1.0', 'IPython': '8.14.0', 'ipywidgets': '8.1.0', 'tqdm': '4.66.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.0', 'imblearn': '0.11.0', 'category_encoders': '2.6.2', 'lightgbm': '4.1.0', 'numba': '0.57.1', 'requests': '2.31.0', 'matplotlib': '3.7.2', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.16.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.0', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.5', 'markupsafe': '2.1.2', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.3.0', 'wurlitzer': 'Not installed'}, 'python': {'version': '3.10.6', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.1.0', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.0', 'imblearn': '0.10.1', 'category_encoders': '2.6.2', 'lightgbm': '4.0.0', 'numba': '0.56.4', 'requests': '2.31.0', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.0', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.5', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.3.0', 'wurlitzer': '3.0.3'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2023-09-28 15:04:50,901:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-28 15:04:50,901:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-28 15:04:50,901:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-28 15:04:50,901:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-28 15:05:23,865:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-28 15:05:23,865:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-28 15:05:23,865:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-28 15:05:23,865:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-28 15:05:24,495:INFO:Initializing load_model()
+2023-09-28 15:05:24,495:INFO:load_model(model_name=minha_api, platform=None, authentication=None, verbose=True)
+2023-09-28 15:05:24,527:WARNING:C:\Users\Inteli\AppData\Local\Programs\Python\Python310\lib\site-packages\pycaret\internal\pipeline.py:139: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '23.2.1', 'setuptools': '63.2.0', 'pycaret': '3.1.0', 'IPython': '8.14.0', 'ipywidgets': '8.1.0', 'tqdm': '4.66.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.0', 'imblearn': '0.11.0', 'category_encoders': '2.6.2', 'lightgbm': '4.1.0', 'numba': '0.57.1', 'requests': '2.31.0', 'matplotlib': '3.7.2', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.16.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.0', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.5', 'markupsafe': '2.1.2', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.3.0', 'wurlitzer': 'Not installed'}, 'python': {'version': '3.10.6', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.1.0', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.0', 'imblearn': '0.10.1', 'category_encoders': '2.6.2', 'lightgbm': '4.0.0', 'numba': '0.56.4', 'requests': '2.31.0', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.0', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.5', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.3.0', 'wurlitzer': '3.0.3'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2023-09-28 15:06:05,298:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-28 15:06:05,298:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-28 15:06:05,298:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-28 15:06:05,298:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-28 15:06:05,931:INFO:Initializing load_model()
+2023-09-28 15:06:05,931:INFO:load_model(model_name=minha_api, platform=None, authentication=None, verbose=True)
+2023-09-28 15:06:05,947:WARNING:C:\Users\Inteli\AppData\Local\Programs\Python\Python310\lib\site-packages\pycaret\internal\pipeline.py:139: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '23.2.1', 'setuptools': '63.2.0', 'pycaret': '3.1.0', 'IPython': '8.14.0', 'ipywidgets': '8.1.0', 'tqdm': '4.66.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.0', 'imblearn': '0.11.0', 'category_encoders': '2.6.2', 'lightgbm': '4.1.0', 'numba': '0.57.1', 'requests': '2.31.0', 'matplotlib': '3.7.2', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.16.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.0', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.5', 'markupsafe': '2.1.2', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.3.0', 'wurlitzer': 'Not installed'}, 'python': {'version': '3.10.6', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.1.0', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.0', 'imblearn': '0.10.1', 'category_encoders': '2.6.2', 'lightgbm': '4.0.0', 'numba': '0.56.4', 'requests': '2.31.0', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.0', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.5', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.3.0', 'wurlitzer': '3.0.3'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2023-09-28 15:06:16,176:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-28 15:06:16,176:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-28 15:06:16,176:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-28 15:06:16,176:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-28 15:06:16,762:INFO:Initializing load_model()
+2023-09-28 15:06:16,762:INFO:load_model(model_name=minha_api, platform=None, authentication=None, verbose=True)
+2023-09-28 15:06:16,791:WARNING:C:\Users\Inteli\AppData\Local\Programs\Python\Python310\lib\site-packages\pycaret\internal\pipeline.py:139: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '23.2.1', 'setuptools': '63.2.0', 'pycaret': '3.1.0', 'IPython': '8.14.0', 'ipywidgets': '8.1.0', 'tqdm': '4.66.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.0', 'imblearn': '0.11.0', 'category_encoders': '2.6.2', 'lightgbm': '4.1.0', 'numba': '0.57.1', 'requests': '2.31.0', 'matplotlib': '3.7.2', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.16.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.0', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.5', 'markupsafe': '2.1.2', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.3.0', 'wurlitzer': 'Not installed'}, 'python': {'version': '3.10.6', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.1.0', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.0', 'imblearn': '0.10.1', 'category_encoders': '2.6.2', 'lightgbm': '4.0.0', 'numba': '0.56.4', 'requests': '2.31.0', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.0', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.5', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.3.0', 'wurlitzer': '3.0.3'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2023-09-28 15:09:33,291:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-28 15:09:33,291:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-28 15:09:33,291:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-28 15:09:33,291:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-28 15:09:33,917:INFO:Initializing load_model()
+2023-09-28 15:09:33,917:INFO:load_model(model_name=minha_api, platform=None, authentication=None, verbose=True)
+2023-09-28 15:09:33,943:WARNING:C:\Users\Inteli\AppData\Local\Programs\Python\Python310\lib\site-packages\pycaret\internal\pipeline.py:139: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '23.2.1', 'setuptools': '63.2.0', 'pycaret': '3.1.0', 'IPython': '8.14.0', 'ipywidgets': '8.1.0', 'tqdm': '4.66.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.0', 'imblearn': '0.11.0', 'category_encoders': '2.6.2', 'lightgbm': '4.1.0', 'numba': '0.57.1', 'requests': '2.31.0', 'matplotlib': '3.7.2', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.16.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.0', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.5', 'markupsafe': '2.1.2', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.3.0', 'wurlitzer': 'Not installed'}, 'python': {'version': '3.10.6', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.1.0', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.0', 'imblearn': '0.10.1', 'category_encoders': '2.6.2', 'lightgbm': '4.0.0', 'numba': '0.56.4', 'requests': '2.31.0', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.0', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.5', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.3.0', 'wurlitzer': '3.0.3'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2023-09-28 15:16:02,512:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-28 15:16:02,512:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-28 15:16:02,512:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-28 15:16:02,512:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-28 15:16:03,123:INFO:Initializing load_model()
+2023-09-28 15:16:03,123:INFO:load_model(model_name=minha_api, platform=None, authentication=None, verbose=True)
+2023-09-28 15:16:03,140:WARNING:C:\Users\Inteli\AppData\Local\Programs\Python\Python310\lib\site-packages\pycaret\internal\pipeline.py:139: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '23.2.1', 'setuptools': '63.2.0', 'pycaret': '3.1.0', 'IPython': '8.14.0', 'ipywidgets': '8.1.0', 'tqdm': '4.66.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.0', 'imblearn': '0.11.0', 'category_encoders': '2.6.2', 'lightgbm': '4.1.0', 'numba': '0.57.1', 'requests': '2.31.0', 'matplotlib': '3.7.2', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.16.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.0', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.5', 'markupsafe': '2.1.2', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.3.0', 'wurlitzer': 'Not installed'}, 'python': {'version': '3.10.6', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.1.0', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.0', 'imblearn': '0.10.1', 'category_encoders': '2.6.2', 'lightgbm': '4.0.0', 'numba': '0.56.4', 'requests': '2.31.0', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.0', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.5', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.3.0', 'wurlitzer': '3.0.3'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2023-09-28 15:18:02,971:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-28 15:18:02,971:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-28 15:18:02,971:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-28 15:18:02,971:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-28 15:18:03,614:INFO:Initializing load_model()
+2023-09-28 15:18:03,614:INFO:load_model(model_name=minha_api, platform=None, authentication=None, verbose=True)
+2023-09-28 15:18:03,630:WARNING:C:\Users\Inteli\AppData\Local\Programs\Python\Python310\lib\site-packages\pycaret\internal\pipeline.py:139: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '23.2.1', 'setuptools': '63.2.0', 'pycaret': '3.1.0', 'IPython': '8.14.0', 'ipywidgets': '8.1.0', 'tqdm': '4.66.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.0', 'imblearn': '0.11.0', 'category_encoders': '2.6.2', 'lightgbm': '4.1.0', 'numba': '0.57.1', 'requests': '2.31.0', 'matplotlib': '3.7.2', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.16.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.0', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.5', 'markupsafe': '2.1.2', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.3.0', 'wurlitzer': 'Not installed'}, 'python': {'version': '3.10.6', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.1.0', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.0', 'imblearn': '0.10.1', 'category_encoders': '2.6.2', 'lightgbm': '4.0.0', 'numba': '0.56.4', 'requests': '2.31.0', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.0', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.5', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.3.0', 'wurlitzer': '3.0.3'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2023-09-28 15:26:09,736:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-28 15:26:09,736:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-28 15:26:09,736:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-28 15:26:09,736:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-28 15:26:10,425:INFO:Initializing load_model()
+2023-09-28 15:26:10,425:INFO:load_model(model_name=minha_api, platform=None, authentication=None, verbose=True)
+2023-09-28 15:26:10,456:WARNING:C:\Users\Inteli\AppData\Local\Programs\Python\Python310\lib\site-packages\pycaret\internal\pipeline.py:139: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '23.2.1', 'setuptools': '63.2.0', 'pycaret': '3.1.0', 'IPython': '8.14.0', 'ipywidgets': '8.1.0', 'tqdm': '4.66.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.0', 'imblearn': '0.11.0', 'category_encoders': '2.6.2', 'lightgbm': '4.1.0', 'numba': '0.57.1', 'requests': '2.31.0', 'matplotlib': '3.7.2', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.16.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.0', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.5', 'markupsafe': '2.1.2', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.3.0', 'wurlitzer': 'Not installed'}, 'python': {'version': '3.10.6', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.1.0', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.0', 'imblearn': '0.10.1', 'category_encoders': '2.6.2', 'lightgbm': '4.0.0', 'numba': '0.56.4', 'requests': '2.31.0', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.0', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.5', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.3.0', 'wurlitzer': '3.0.3'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2023-09-28 17:09:10,574:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-28 17:09:10,574:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-28 17:09:10,574:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-28 17:09:10,574:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-28 17:09:11,247:INFO:Initializing load_model()
+2023-09-28 17:09:11,247:INFO:load_model(model_name=minha_api, platform=None, authentication=None, verbose=True)
+2023-09-28 17:09:11,263:WARNING:C:\Users\Inteli\AppData\Local\Programs\Python\Python310\lib\site-packages\pycaret\internal\pipeline.py:139: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '23.2.1', 'setuptools': '63.2.0', 'pycaret': '3.1.0', 'IPython': '8.14.0', 'ipywidgets': '8.1.0', 'tqdm': '4.66.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.0', 'imblearn': '0.11.0', 'category_encoders': '2.6.2', 'lightgbm': '4.1.0', 'numba': '0.57.1', 'requests': '2.31.0', 'matplotlib': '3.7.2', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.16.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.0', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.5', 'markupsafe': '2.1.2', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.3.0', 'wurlitzer': 'Not installed'}, 'python': {'version': '3.10.6', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.1.0', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.0', 'imblearn': '0.10.1', 'category_encoders': '2.6.2', 'lightgbm': '4.0.0', 'numba': '0.56.4', 'requests': '2.31.0', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.0', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.5', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.3.0', 'wurlitzer': '3.0.3'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2023-09-28 17:09:43,859:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-28 17:09:43,859:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-28 17:09:43,859:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-28 17:09:43,859:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-28 17:09:44,496:INFO:Initializing load_model()
+2023-09-28 17:09:44,496:INFO:load_model(model_name=minha_api, platform=None, authentication=None, verbose=True)
+2023-09-28 17:09:44,521:WARNING:C:\Users\Inteli\AppData\Local\Programs\Python\Python310\lib\site-packages\pycaret\internal\pipeline.py:139: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '23.2.1', 'setuptools': '63.2.0', 'pycaret': '3.1.0', 'IPython': '8.14.0', 'ipywidgets': '8.1.0', 'tqdm': '4.66.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.0', 'imblearn': '0.11.0', 'category_encoders': '2.6.2', 'lightgbm': '4.1.0', 'numba': '0.57.1', 'requests': '2.31.0', 'matplotlib': '3.7.2', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.16.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.0', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.5', 'markupsafe': '2.1.2', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.3.0', 'wurlitzer': 'Not installed'}, 'python': {'version': '3.10.6', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.1.0', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.0', 'imblearn': '0.10.1', 'category_encoders': '2.6.2', 'lightgbm': '4.0.0', 'numba': '0.56.4', 'requests': '2.31.0', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.0', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.5', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.3.0', 'wurlitzer': '3.0.3'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2023-09-28 17:10:37,213:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-28 17:10:37,213:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-28 17:10:37,213:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-28 17:10:37,213:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-28 17:10:37,799:INFO:Initializing load_model()
+2023-09-28 17:10:37,799:INFO:load_model(model_name=minha_api, platform=None, authentication=None, verbose=True)
+2023-09-28 17:10:37,827:WARNING:C:\Users\Inteli\AppData\Local\Programs\Python\Python310\lib\site-packages\pycaret\internal\pipeline.py:139: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '23.2.1', 'setuptools': '63.2.0', 'pycaret': '3.1.0', 'IPython': '8.14.0', 'ipywidgets': '8.1.0', 'tqdm': '4.66.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.0', 'imblearn': '0.11.0', 'category_encoders': '2.6.2', 'lightgbm': '4.1.0', 'numba': '0.57.1', 'requests': '2.31.0', 'matplotlib': '3.7.2', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.16.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.0', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.5', 'markupsafe': '2.1.2', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.3.0', 'wurlitzer': 'Not installed'}, 'python': {'version': '3.10.6', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.1.0', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.0', 'imblearn': '0.10.1', 'category_encoders': '2.6.2', 'lightgbm': '4.0.0', 'numba': '0.56.4', 'requests': '2.31.0', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.0', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.5', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.3.0', 'wurlitzer': '3.0.3'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2023-09-28 17:10:42,351:INFO:Initializing predict_model()
+2023-09-28 17:10:42,351:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000002B9D4302950>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['Age', 'Income'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['Gender'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['Gender'],
+                                    transformer=OrdinalEncoder(cols=['Gender'],
+                                                               handle_missing='return_nan',
+                                                               mapping=[{'col': 'Gender',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Female    0
+Male      1
+NaN      -1
+dtype: int64}]))),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames())),
+                ('trained_model',
+                 GradientBoostingRegressor(random_state=5681))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000002B9D430A3B0>)
+2023-09-28 17:10:42,351:INFO:Checking exceptions
+2023-09-28 17:10:42,351:INFO:Preloading libraries
+2023-09-28 17:10:42,351:INFO:Set up data.
+2023-09-28 17:10:42,367:INFO:Set up index.
+2023-09-28 17:11:17,612:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-28 17:11:17,612:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-28 17:11:17,612:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-28 17:11:17,612:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-28 17:11:18,329:INFO:Initializing load_model()
+2023-09-28 17:11:18,329:INFO:load_model(model_name=minha_api, platform=None, authentication=None, verbose=True)
+2023-09-28 17:11:18,353:WARNING:C:\Users\Inteli\AppData\Local\Programs\Python\Python310\lib\site-packages\pycaret\internal\pipeline.py:139: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '23.2.1', 'setuptools': '63.2.0', 'pycaret': '3.1.0', 'IPython': '8.14.0', 'ipywidgets': '8.1.0', 'tqdm': '4.66.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.0', 'imblearn': '0.11.0', 'category_encoders': '2.6.2', 'lightgbm': '4.1.0', 'numba': '0.57.1', 'requests': '2.31.0', 'matplotlib': '3.7.2', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.16.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.0', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.5', 'markupsafe': '2.1.2', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.3.0', 'wurlitzer': 'Not installed'}, 'python': {'version': '3.10.6', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.1.0', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.0', 'imblearn': '0.10.1', 'category_encoders': '2.6.2', 'lightgbm': '4.0.0', 'numba': '0.56.4', 'requests': '2.31.0', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.0', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.5', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.3.0', 'wurlitzer': '3.0.3'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2023-09-28 17:11:21,041:INFO:Initializing predict_model()
+2023-09-28 17:11:21,041:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000020D87ADE950>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['Age', 'Income'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['Gender'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['Gender'],
+                                    transformer=OrdinalEncoder(cols=['Gender'],
+                                                               handle_missing='return_nan',
+                                                               mapping=[{'col': 'Gender',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Female    0
+Male      1
+NaN      -1
+dtype: int64}]))),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames())),
+                ('trained_model',
+                 GradientBoostingRegressor(random_state=5681))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000020D87AE9900>)
+2023-09-28 17:11:21,041:INFO:Checking exceptions
+2023-09-28 17:11:21,041:INFO:Preloading libraries
+2023-09-28 17:11:21,041:INFO:Set up data.
+2023-09-28 17:11:21,041:INFO:Set up index.
+2023-09-28 17:15:11,698:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-28 17:15:11,698:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-28 17:15:11,698:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-28 17:15:11,698:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-28 17:15:12,446:INFO:Initializing load_model()
+2023-09-28 17:15:12,446:INFO:load_model(model_name=minha_api, platform=None, authentication=None, verbose=True)
+2023-09-28 17:15:12,484:WARNING:C:\Users\Inteli\AppData\Local\Programs\Python\Python310\lib\site-packages\pycaret\internal\pipeline.py:139: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '23.2.1', 'setuptools': '63.2.0', 'pycaret': '3.1.0', 'IPython': '8.14.0', 'ipywidgets': '8.1.0', 'tqdm': '4.66.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.0', 'imblearn': '0.11.0', 'category_encoders': '2.6.2', 'lightgbm': '4.1.0', 'numba': '0.57.1', 'requests': '2.31.0', 'matplotlib': '3.7.2', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.16.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.0', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.5', 'markupsafe': '2.1.2', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.3.0', 'wurlitzer': 'Not installed'}, 'python': {'version': '3.10.6', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.1.0', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.0', 'imblearn': '0.10.1', 'category_encoders': '2.6.2', 'lightgbm': '4.0.0', 'numba': '0.56.4', 'requests': '2.31.0', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.0', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.5', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.3.0', 'wurlitzer': '3.0.3'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2023-09-28 17:18:14,990:INFO:Initializing predict_model()
+2023-09-28 17:18:14,990:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x00000182D90E7100>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['Age', 'Income'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['Gender'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['Gender'],
+                                    transformer=OrdinalEncoder(cols=['Gender'],
+                                                               handle_missing='return_nan',
+                                                               mapping=[{'col': 'Gender',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Female    0
+Male      1
+NaN      -1
+dtype: int64}]))),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames())),
+                ('trained_model',
+                 GradientBoostingRegressor(random_state=5681))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x00000182D9186560>)
+2023-09-28 17:18:14,990:INFO:Checking exceptions
+2023-09-28 17:18:14,990:INFO:Preloading libraries
+2023-09-28 17:18:14,990:INFO:Set up data.
+2023-09-28 17:18:14,990:INFO:Set up index.
+2023-09-28 17:18:15,473:INFO:Initializing predict_model()
+2023-09-28 17:18:15,473:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x00000182D911A260>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['Age', 'Income'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['Gender'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['Gender'],
+                                    transformer=OrdinalEncoder(cols=['Gender'],
+                                                               handle_missing='return_nan',
+                                                               mapping=[{'col': 'Gender',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Female    0
+Male      1
+NaN      -1
+dtype: int64}]))),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames())),
+                ('trained_model',
+                 GradientBoostingRegressor(random_state=5681))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x00000182D7C61F30>)
+2023-09-28 17:18:15,473:INFO:Checking exceptions
+2023-09-28 17:18:15,473:INFO:Preloading libraries
+2023-09-28 17:18:15,473:INFO:Set up data.
+2023-09-28 17:18:15,481:INFO:Set up index.
+2023-09-28 17:18:17,369:INFO:Initializing predict_model()
+2023-09-28 17:18:17,371:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x00000182D9119A80>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['Age', 'Income'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['Gender'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['Gender'],
+                                    transformer=OrdinalEncoder(cols=['Gender'],
+                                                               handle_missing='return_nan',
+                                                               mapping=[{'col': 'Gender',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Female    0
+Male      1
+NaN      -1
+dtype: int64}]))),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames())),
+                ('trained_model',
+                 GradientBoostingRegressor(random_state=5681))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x00000182D7C63490>)
+2023-09-28 17:18:17,371:INFO:Checking exceptions
+2023-09-28 17:18:17,371:INFO:Preloading libraries
+2023-09-28 17:18:17,371:INFO:Set up data.
+2023-09-28 17:18:17,375:INFO:Set up index.
+2023-09-28 17:18:44,786:INFO:Initializing predict_model()
+2023-09-28 17:18:44,786:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x00000182D91191E0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['Age', 'Income'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['Gender'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['Gender'],
+                                    transformer=OrdinalEncoder(cols=['Gender'],
+                                                               handle_missing='return_nan',
+                                                               mapping=[{'col': 'Gender',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Female    0
+Male      1
+NaN      -1
+dtype: int64}]))),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames())),
+                ('trained_model',
+                 GradientBoostingRegressor(random_state=5681))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x00000182D7A3F010>)
+2023-09-28 17:18:44,786:INFO:Checking exceptions
+2023-09-28 17:18:44,786:INFO:Preloading libraries
+2023-09-28 17:18:44,786:INFO:Set up data.
+2023-09-28 17:18:44,786:INFO:Set up index.
+2023-09-28 17:18:45,726:INFO:Initializing predict_model()
+2023-09-28 17:18:45,726:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x00000182D911A830>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['Age', 'Income'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['Gender'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['Gender'],
+                                    transformer=OrdinalEncoder(cols=['Gender'],
+                                                               handle_missing='return_nan',
+                                                               mapping=[{'col': 'Gender',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Female    0
+Male      1
+NaN      -1
+dtype: int64}]))),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames())),
+                ('trained_model',
+                 GradientBoostingRegressor(random_state=5681))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x00000182D7C13490>)
+2023-09-28 17:18:45,726:INFO:Checking exceptions
+2023-09-28 17:18:45,726:INFO:Preloading libraries
+2023-09-28 17:18:45,726:INFO:Set up data.
+2023-09-28 17:18:45,726:INFO:Set up index.
+2023-09-28 17:18:46,021:INFO:Initializing predict_model()
+2023-09-28 17:18:46,021:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x00000182D911AD10>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['Age', 'Income'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['Gender'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['Gender'],
+                                    transformer=OrdinalEncoder(cols=['Gender'],
+                                                               handle_missing='return_nan',
+                                                               mapping=[{'col': 'Gender',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Female    0
+Male      1
+NaN      -1
+dtype: int64}]))),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames())),
+                ('trained_model',
+                 GradientBoostingRegressor(random_state=5681))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x00000182D7A3E440>)
+2023-09-28 17:18:46,021:INFO:Checking exceptions
+2023-09-28 17:18:46,021:INFO:Preloading libraries
+2023-09-28 17:18:46,021:INFO:Set up data.
+2023-09-28 17:18:46,027:INFO:Set up index.
+2023-09-28 17:20:07,006:INFO:Initializing predict_model()
+2023-09-28 17:20:07,008:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x00000182D911AEC0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['Age', 'Income'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['Gender'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['Gender'],
+                                    transformer=OrdinalEncoder(cols=['Gender'],
+                                                               handle_missing='return_nan',
+                                                               mapping=[{'col': 'Gender',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Female    0
+Male      1
+NaN      -1
+dtype: int64}]))),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames())),
+                ('trained_model',
+                 GradientBoostingRegressor(random_state=5681))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x00000182D7A3FE20>)
+2023-09-28 17:20:07,008:INFO:Checking exceptions
+2023-09-28 17:20:07,008:INFO:Preloading libraries
+2023-09-28 17:20:07,009:INFO:Set up data.
+2023-09-28 17:20:07,013:INFO:Set up index.
+2023-09-28 17:20:07,251:INFO:Initializing predict_model()
+2023-09-28 17:20:07,251:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x00000182D9119150>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['Age', 'Income'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['Gender'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['Gender'],
+                                    transformer=OrdinalEncoder(cols=['Gender'],
+                                                               handle_missing='return_nan',
+                                                               mapping=[{'col': 'Gender',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Female    0
+Male      1
+NaN      -1
+dtype: int64}]))),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames())),
+                ('trained_model',
+                 GradientBoostingRegressor(random_state=5681))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x00000182D7A3F010>)
+2023-09-28 17:20:07,251:INFO:Checking exceptions
+2023-09-28 17:20:07,251:INFO:Preloading libraries
+2023-09-28 17:20:07,251:INFO:Set up data.
+2023-09-28 17:20:07,261:INFO:Set up index.
+2023-09-28 17:20:07,835:INFO:Initializing predict_model()
+2023-09-28 17:20:07,835:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x00000182D911B2B0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['Age', 'Income'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['Gender'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['Gender'],
+                                    transformer=OrdinalEncoder(cols=['Gender'],
+                                                               handle_missing='return_nan',
+                                                               mapping=[{'col': 'Gender',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Female    0
+Male      1
+NaN      -1
+dtype: int64}]))),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames())),
+                ('trained_model',
+                 GradientBoostingRegressor(random_state=5681))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x00000182D9185F30>)
+2023-09-28 17:20:07,835:INFO:Checking exceptions
+2023-09-28 17:20:07,835:INFO:Preloading libraries
+2023-09-28 17:20:07,835:INFO:Set up data.
+2023-09-28 17:20:07,851:INFO:Set up index.
+2023-09-28 17:20:11,218:INFO:Initializing predict_model()
+2023-09-28 17:20:11,218:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x00000182D911A590>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['Age', 'Income'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['Gender'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['Gender'],
+                                    transformer=OrdinalEncoder(cols=['Gender'],
+                                                               handle_missing='return_nan',
+                                                               mapping=[{'col': 'Gender',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Female    0
+Male      1
+NaN      -1
+dtype: int64}]))),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames())),
+                ('trained_model',
+                 GradientBoostingRegressor(random_state=5681))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x00000182D7A3FE20>)
+2023-09-28 17:20:11,218:INFO:Checking exceptions
+2023-09-28 17:20:11,218:INFO:Preloading libraries
+2023-09-28 17:20:11,218:INFO:Set up data.
+2023-09-28 17:20:11,222:INFO:Set up index.
+2023-09-28 17:20:29,523:INFO:Initializing predict_model()
+2023-09-28 17:20:29,523:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x00000182D9118460>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['Age', 'Income'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['Gender'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['Gender'],
+                                    transformer=OrdinalEncoder(cols=['Gender'],
+                                                               handle_missing='return_nan',
+                                                               mapping=[{'col': 'Gender',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Female    0
+Male      1
+NaN      -1
+dtype: int64}]))),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames())),
+                ('trained_model',
+                 GradientBoostingRegressor(random_state=5681))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x00000182D7C13520>)
+2023-09-28 17:20:29,523:INFO:Checking exceptions
+2023-09-28 17:20:29,523:INFO:Preloading libraries
+2023-09-28 17:20:29,523:INFO:Set up data.
+2023-09-28 17:20:29,539:INFO:Set up index.
+2023-09-28 17:22:15,212:INFO:Initializing predict_model()
+2023-09-28 17:22:15,212:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x00000182D9118220>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['Age', 'Income'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['Gender'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['Gender'],
+                                    transformer=OrdinalEncoder(cols=['Gender'],
+                                                               handle_missing='return_nan',
+                                                               mapping=[{'col': 'Gender',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Female    0
+Male      1
+NaN      -1
+dtype: int64}]))),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames())),
+                ('trained_model',
+                 GradientBoostingRegressor(random_state=5681))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x00000182D7C13490>)
+2023-09-28 17:22:15,212:INFO:Checking exceptions
+2023-09-28 17:22:15,212:INFO:Preloading libraries
+2023-09-28 17:22:15,212:INFO:Set up data.
+2023-09-28 17:22:15,222:INFO:Set up index.
+2023-09-28 17:22:17,608:INFO:Initializing predict_model()
+2023-09-28 17:22:17,608:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x00000182D9119870>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['Age', 'Income'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['Gender'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['Gender'],
+                                    transformer=OrdinalEncoder(cols=['Gender'],
+                                                               handle_missing='return_nan',
+                                                               mapping=[{'col': 'Gender',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Female    0
+Male      1
+NaN      -1
+dtype: int64}]))),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames())),
+                ('trained_model',
+                 GradientBoostingRegressor(random_state=5681))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x00000182D7C13520>)
+2023-09-28 17:22:17,608:INFO:Checking exceptions
+2023-09-28 17:22:17,608:INFO:Preloading libraries
+2023-09-28 17:22:17,608:INFO:Set up data.
+2023-09-28 17:22:17,618:INFO:Set up index.
+2023-09-28 17:23:08,320:INFO:Initializing predict_model()
+2023-09-28 17:23:08,320:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x00000182D91189A0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['Age', 'Income'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['Gender'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['Gender'],
+                                    transformer=OrdinalEncoder(cols=['Gender'],
+                                                               handle_missing='return_nan',
+                                                               mapping=[{'col': 'Gender',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Female    0
+Male      1
+NaN      -1
+dtype: int64}]))),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames())),
+                ('trained_model',
+                 GradientBoostingRegressor(random_state=5681))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x00000182D7C13490>)
+2023-09-28 17:23:08,320:INFO:Checking exceptions
+2023-09-28 17:23:08,320:INFO:Preloading libraries
+2023-09-28 17:23:08,320:INFO:Set up data.
+2023-09-28 17:23:08,325:INFO:Set up index.
+2023-09-28 17:23:50,925:INFO:Initializing predict_model()
+2023-09-28 17:23:50,925:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x00000182D9118850>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['Age', 'Income'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['Gender'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['Gender'],
+                                    transformer=OrdinalEncoder(cols=['Gender'],
+                                                               handle_missing='return_nan',
+                                                               mapping=[{'col': 'Gender',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Female    0
+Male      1
+NaN      -1
+dtype: int64}]))),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames())),
+                ('trained_model',
+                 GradientBoostingRegressor(random_state=5681))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x00000182D7C13520>)
+2023-09-28 17:23:50,925:INFO:Checking exceptions
+2023-09-28 17:23:50,925:INFO:Preloading libraries
+2023-09-28 17:23:50,925:INFO:Set up data.
+2023-09-28 17:23:50,932:INFO:Set up index.
+2023-09-28 17:23:58,718:INFO:Initializing predict_model()
+2023-09-28 17:23:58,718:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x00000182D911ACB0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['Age', 'Income'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['Gender'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['Gender'],
+                                    transformer=OrdinalEncoder(cols=['Gender'],
+                                                               handle_missing='return_nan',
+                                                               mapping=[{'col': 'Gender',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Female    0
+Male      1
+NaN      -1
+dtype: int64}]))),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames())),
+                ('trained_model',
+                 GradientBoostingRegressor(random_state=5681))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x00000182D7C13490>)
+2023-09-28 17:23:58,718:INFO:Checking exceptions
+2023-09-28 17:23:58,718:INFO:Preloading libraries
+2023-09-28 17:23:58,718:INFO:Set up data.
+2023-09-28 17:23:58,718:INFO:Set up index.
+2023-09-28 17:24:06,586:INFO:Initializing predict_model()
+2023-09-28 17:24:06,586:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x00000182D911AF20>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['Age', 'Income'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['Gender'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['Gender'],
+                                    transformer=OrdinalEncoder(cols=['Gender'],
+                                                               handle_missing='return_nan',
+                                                               mapping=[{'col': 'Gender',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Female    0
+Male      1
+NaN      -1
+dtype: int64}]))),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames())),
+                ('trained_model',
+                 GradientBoostingRegressor(random_state=5681))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x00000182D7C13520>)
+2023-09-28 17:24:06,586:INFO:Checking exceptions
+2023-09-28 17:24:06,586:INFO:Preloading libraries
+2023-09-28 17:24:06,586:INFO:Set up data.
+2023-09-28 17:24:06,595:INFO:Set up index.
+2023-09-28 17:25:32,604:INFO:Initializing predict_model()
+2023-09-28 17:25:32,604:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x00000182D91181C0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['Age', 'Income'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['Gender'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['Gender'],
+                                    transformer=OrdinalEncoder(cols=['Gender'],
+                                                               handle_missing='return_nan',
+                                                               mapping=[{'col': 'Gender',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Female    0
+Male      1
+NaN      -1
+dtype: int64}]))),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames())),
+                ('trained_model',
+                 GradientBoostingRegressor(random_state=5681))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x00000182D7C13490>)
+2023-09-28 17:25:32,604:INFO:Checking exceptions
+2023-09-28 17:25:32,604:INFO:Preloading libraries
+2023-09-28 17:25:32,604:INFO:Set up data.
+2023-09-28 17:25:32,604:INFO:Set up index.
+2023-09-28 17:26:41,085:INFO:Initializing predict_model()
+2023-09-28 17:26:41,085:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x00000182D9118760>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['Age', 'Income'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['Gender'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['Gender'],
+                                    transformer=OrdinalEncoder(cols=['Gender'],
+                                                               handle_missing='return_nan',
+                                                               mapping=[{'col': 'Gender',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Female    0
+Male      1
+NaN      -1
+dtype: int64}]))),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames())),
+                ('trained_model',
+                 GradientBoostingRegressor(random_state=5681))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x00000182D7C13520>)
+2023-09-28 17:26:41,085:INFO:Checking exceptions
+2023-09-28 17:26:41,085:INFO:Preloading libraries
+2023-09-28 17:26:41,085:INFO:Set up data.
+2023-09-28 17:26:41,085:INFO:Set up index.
+2023-09-28 17:26:56,855:INFO:Initializing predict_model()
+2023-09-28 17:26:56,855:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x00000182D911AB90>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['Age', 'Income'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['Gender'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['Gender'],
+                                    transformer=OrdinalEncoder(cols=['Gender'],
+                                                               handle_missing='return_nan',
+                                                               mapping=[{'col': 'Gender',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Female    0
+Male      1
+NaN      -1
+dtype: int64}]))),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames())),
+                ('trained_model',
+                 GradientBoostingRegressor(random_state=5681))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x00000182D7C13490>)
+2023-09-28 17:26:56,855:INFO:Checking exceptions
+2023-09-28 17:26:56,855:INFO:Preloading libraries
+2023-09-28 17:26:56,855:INFO:Set up data.
+2023-09-28 17:26:56,861:INFO:Set up index.
+2023-09-28 17:27:12,632:INFO:Initializing predict_model()
+2023-09-28 17:27:12,632:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x00000182D9118F40>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['Age', 'Income'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['Gender'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['Gender'],
+                                    transformer=OrdinalEncoder(cols=['Gender'],
+                                                               handle_missing='return_nan',
+                                                               mapping=[{'col': 'Gender',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Female    0
+Male      1
+NaN      -1
+dtype: int64}]))),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames())),
+                ('trained_model',
+                 GradientBoostingRegressor(random_state=5681))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x00000182D7C13520>)
+2023-09-28 17:27:12,632:INFO:Checking exceptions
+2023-09-28 17:27:12,632:INFO:Preloading libraries
+2023-09-28 17:27:12,632:INFO:Set up data.
+2023-09-28 17:27:12,632:INFO:Set up index.
+2023-09-28 17:27:19,138:INFO:Initializing predict_model()
+2023-09-28 17:27:19,138:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x00000182D911AEC0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['Age', 'Income'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['Gender'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['Gender'],
+                                    transformer=OrdinalEncoder(cols=['Gender'],
+                                                               handle_missing='return_nan',
+                                                               mapping=[{'col': 'Gender',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Female    0
+Male      1
+NaN      -1
+dtype: int64}]))),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames())),
+                ('trained_model',
+                 GradientBoostingRegressor(random_state=5681))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x00000182D7C13490>)
+2023-09-28 17:27:19,138:INFO:Checking exceptions
+2023-09-28 17:27:19,138:INFO:Preloading libraries
+2023-09-28 17:27:19,138:INFO:Set up data.
+2023-09-28 17:27:19,138:INFO:Set up index.
+2023-09-28 17:27:35,577:INFO:Initializing predict_model()
+2023-09-28 17:27:35,577:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x00000182D9119090>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['Age', 'Income'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['Gender'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['Gender'],
+                                    transformer=OrdinalEncoder(cols=['Gender'],
+                                                               handle_missing='return_nan',
+                                                               mapping=[{'col': 'Gender',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Female    0
+Male      1
+NaN      -1
+dtype: int64}]))),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames())),
+                ('trained_model',
+                 GradientBoostingRegressor(random_state=5681))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x00000182D7C13520>)
+2023-09-28 17:27:35,577:INFO:Checking exceptions
+2023-09-28 17:27:35,577:INFO:Preloading libraries
+2023-09-28 17:27:35,577:INFO:Set up data.
+2023-09-28 17:27:35,591:INFO:Set up index.
+2023-09-28 17:31:13,603:INFO:Initializing predict_model()
+2023-09-28 17:31:13,603:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x00000182D9119E40>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['Age', 'Income'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['Gender'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['Gender'],
+                                    transformer=OrdinalEncoder(cols=['Gender'],
+                                                               handle_missing='return_nan',
+                                                               mapping=[{'col': 'Gender',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Female    0
+Male      1
+NaN      -1
+dtype: int64}]))),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames())),
+                ('trained_model',
+                 GradientBoostingRegressor(random_state=5681))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x00000182D7C13490>)
+2023-09-28 17:31:13,603:INFO:Checking exceptions
+2023-09-28 17:31:13,603:INFO:Preloading libraries
+2023-09-28 17:31:13,603:INFO:Set up data.
+2023-09-28 17:31:13,618:INFO:Set up index.
+2023-09-28 17:31:24,765:INFO:Initializing predict_model()
+2023-09-28 17:31:24,776:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x00000182D9119F90>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['Age', 'Income'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['Gender'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['Gender'],
+                                    transformer=OrdinalEncoder(cols=['Gender'],
+                                                               handle_missing='return_nan',
+                                                               mapping=[{'col': 'Gender',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Female    0
+Male      1
+NaN      -1
+dtype: int64}]))),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames())),
+                ('trained_model',
+                 GradientBoostingRegressor(random_state=5681))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x00000182D7C13520>)
+2023-09-28 17:31:24,776:INFO:Checking exceptions
+2023-09-28 17:31:24,776:INFO:Preloading libraries
+2023-09-28 17:31:24,776:INFO:Set up data.
+2023-09-28 17:31:24,781:INFO:Set up index.
+2023-09-28 17:31:26,242:INFO:Initializing predict_model()
+2023-09-28 17:31:26,242:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x00000182D9119A80>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['Age', 'Income'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['Gender'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['Gender'],
+                                    transformer=OrdinalEncoder(cols=['Gender'],
+                                                               handle_missing='return_nan',
+                                                               mapping=[{'col': 'Gender',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Female    0
+Male      1
+NaN      -1
+dtype: int64}]))),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames())),
+                ('trained_model',
+                 GradientBoostingRegressor(random_state=5681))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x00000182D7C13490>)
+2023-09-28 17:31:26,242:INFO:Checking exceptions
+2023-09-28 17:31:26,242:INFO:Preloading libraries
+2023-09-28 17:31:26,242:INFO:Set up data.
+2023-09-28 17:31:26,249:INFO:Set up index.
+2023-09-28 17:32:35,123:INFO:Initializing predict_model()
+2023-09-28 17:32:35,123:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x00000182D9119D50>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['Age', 'Income'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['Gender'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['Gender'],
+                                    transformer=OrdinalEncoder(cols=['Gender'],
+                                                               handle_missing='return_nan',
+                                                               mapping=[{'col': 'Gender',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Female    0
+Male      1
+NaN      -1
+dtype: int64}]))),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames())),
+                ('trained_model',
+                 GradientBoostingRegressor(random_state=5681))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x00000182D7C13520>)
+2023-09-28 17:32:35,123:INFO:Checking exceptions
+2023-09-28 17:32:35,123:INFO:Preloading libraries
+2023-09-28 17:32:35,128:INFO:Set up data.
+2023-09-28 17:32:35,128:INFO:Set up index.
+2023-09-28 17:33:08,624:INFO:Initializing predict_model()
+2023-09-28 17:33:08,624:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x00000182D911B2B0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['Age', 'Income'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['Gender'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['Gender'],
+                                    transformer=OrdinalEncoder(cols=['Gender'],
+                                                               handle_missing='return_nan',
+                                                               mapping=[{'col': 'Gender',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Female    0
+Male      1
+NaN      -1
+dtype: int64}]))),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames())),
+                ('trained_model',
+                 GradientBoostingRegressor(random_state=5681))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x00000182D7C13490>)
+2023-09-28 17:33:08,624:INFO:Checking exceptions
+2023-09-28 17:33:08,624:INFO:Preloading libraries
+2023-09-28 17:33:08,624:INFO:Set up data.
+2023-09-28 17:33:08,624:INFO:Set up index.
+2023-09-28 17:33:25,734:INFO:Initializing predict_model()
+2023-09-28 17:33:25,734:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x00000182D9118AC0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['Age', 'Income'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['Gender'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['Gender'],
+                                    transformer=OrdinalEncoder(cols=['Gender'],
+                                                               handle_missing='return_nan',
+                                                               mapping=[{'col': 'Gender',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Female    0
+Male      1
+NaN      -1
+dtype: int64}]))),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames())),
+                ('trained_model',
+                 GradientBoostingRegressor(random_state=5681))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x00000182D7C13520>)
+2023-09-28 17:33:25,734:INFO:Checking exceptions
+2023-09-28 17:33:25,734:INFO:Preloading libraries
+2023-09-28 17:33:25,734:INFO:Set up data.
+2023-09-28 17:33:25,734:INFO:Set up index.
+2023-09-28 17:33:28,311:INFO:Initializing predict_model()
+2023-09-28 17:33:28,311:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x00000182D9119E70>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['Age', 'Income'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['Gender'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['Gender'],
+                                    transformer=OrdinalEncoder(cols=['Gender'],
+                                                               handle_missing='return_nan',
+                                                               mapping=[{'col': 'Gender',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Female    0
+Male      1
+NaN      -1
+dtype: int64}]))),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames())),
+                ('trained_model',
+                 GradientBoostingRegressor(random_state=5681))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x00000182D7C13490>)
+2023-09-28 17:33:28,311:INFO:Checking exceptions
+2023-09-28 17:33:28,311:INFO:Preloading libraries
+2023-09-28 17:33:28,311:INFO:Set up data.
+2023-09-28 17:33:28,326:INFO:Set up index.
+2023-09-28 21:39:46,210:INFO:Initializing predict_model()
+2023-09-28 21:39:46,210:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x00000182D91193C0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['Age', 'Income'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['Gender'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['Gender'],
+                                    transformer=OrdinalEncoder(cols=['Gender'],
+                                                               handle_missing='return_nan',
+                                                               mapping=[{'col': 'Gender',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Female    0
+Male      1
+NaN      -1
+dtype: int64}]))),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames())),
+                ('trained_model',
+                 GradientBoostingRegressor(random_state=5681))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x00000182D7C13520>)
+2023-09-28 21:39:46,210:INFO:Checking exceptions
+2023-09-28 21:39:46,210:INFO:Preloading libraries
+2023-09-28 21:39:46,210:INFO:Set up data.
+2023-09-28 21:39:46,218:INFO:Set up index.

@@ -1,0 +1,18 @@
+.create-note-container {
+    display: flex;
+    justify-content: space-between;
+    height: 100vh; /* Define a altura da tela inteira */
+  }
+  
+  .note-entry {
+    width: 50%; /* Ocupa metade da largura da tela */
+    padding: 20px;
+    border-right: 1px solid #ccc;
+  }
+  
+  .note-list {
+    width: 50%; /* Ocupa a outra metade da largura da tela */
+    padding: 20px;
+    background-color: #f7f7f7;
+  }
+  
