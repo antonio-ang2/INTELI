@@ -1,0 +1,6 @@
+source;share/bela_tarr/hook/pythonpath.ps1
+source;share/bela_tarr/hook/pythonpath.dsv
+source;share/bela_tarr/hook/pythonpath.sh
+source;share/bela_tarr/hook/ament_prefix_path.ps1
+source;share/bela_tarr/hook/ament_prefix_path.dsv
+source;share/bela_tarr/hook/ament_prefix_path.sh

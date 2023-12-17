@@ -1,0 +1,4 @@
+# SOM (Serviceable Obtainable Market - Mercado Atendível Obtível)
+O SOM representa a parte do SAM que o produto pode efetivamente conquistar, considerando fatores como concorrência, canais de distribuição, localização e influências externas. O SOM é o mercado mais realista para a empresa começar, com foco em uma persona ou cliente ideal específico. Para calcular o SOM, é necessário multiplicar o preço do produto pela quantidade real de clientes que a empresa pode atender em um período definido. Por exemplo, se a empresa atender 12 clientes em um ano, com o preço do produto é $1.901.625, o que resultaria em um faturamento de $22.819.500, sem considerar os gastos internos necessários para essa implementação, como por exemplo a arquitetura da solução que muda conforme o contexto do cliente.
+
+<br/>
