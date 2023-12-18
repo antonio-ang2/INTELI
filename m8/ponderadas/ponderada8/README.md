@@ -31,7 +31,7 @@ Depois de completar a instalação, ainda no mesmo terminal execute o seguinte c
 python tradutor.py desabafo.wav
 ```
 
-PS: Deve-se passar o caminho específico do arquivo que o usuário quer tradutor.
+PS: Deve-se passar o caminho específico do arquivo que o usuário quer traduzir.
 ## FUNCIONAMENTO DO SISTEMA
 
 O sistema tem o funcionamento baseado nas seguintes etapas:
