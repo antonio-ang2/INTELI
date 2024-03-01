@@ -4,7 +4,6 @@ import json
 import random
 from faker import Faker
 
-
 client = mqtt.Client(mqtt.CallbackAPIVersion.VERSION2, "python_publisher")
 
 client.connect("localhost", 1891, 60)
@@ -18,11 +17,10 @@ def generate_data():
     return sensor_register
 
 
-# Loop para publicar mensagens continuamente
 try:
     while True:
         data = generate_data()
-        message = json.dumps(data) # Converte a medição para o formato JSON
+        message = json.dumps(data)
         client.publish("test/topic", message)
         print(f"Publicado: {message}")
         time.sleep(2)
