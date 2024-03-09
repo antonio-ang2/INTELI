@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  metabase:
+    image: metabase/metabase:latest
+    ports:
+      - "12345:3000"
+    volumes:
+      - /home/antonio/Documentos/Github/INTELI/m9/ponderadas/ponderada5:/metabase-data
+
+volumes:
+  metabase-data:
