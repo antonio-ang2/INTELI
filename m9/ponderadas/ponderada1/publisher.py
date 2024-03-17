@@ -11,8 +11,9 @@ client.connect("localhost", 1891, 60)
 def generate_data():
     fake = Faker()
     sensor_register = {
-        "CO_ppm": fake.pyfloat(min_value=1, max_value=1000, right_digits=2), # Monóxido de carbono
-        "NH3_ppm": fake.pyfloat(min_value=1, max_value=300, right_digits=2), # Amonia
+        "CO_ppm": fake.pyfloat(min_value=1, max_value=1000, right_digits=2),
+        
+
     }
     return sensor_register
 
