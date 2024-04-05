@@ -37,5 +37,5 @@ Demonstração:
 
 A fim de demonstrar o processo de criação do armotecedor de cidades inteligentes, tirei alguns prints como melhor forma de visualização.
 
-![Conexão com Kafka](../p2/static/kafka.jpeg)
+![Conexão com Kafka](../p2/static/kafka1.jpeg)
 
