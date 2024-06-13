@@ -12,7 +12,7 @@ Para executar o projeto, siga os passos abaixo:
 # Criando a imagem com Docker
 docker build -t ponderada1async .
 # Executando a imagem e excluindo o container após a execução
-docker run --rm -p 8000:8000 ponderada1async
+docker run --rm -p 8004:8004 ponderada1async
 ```
 
 Essa aplicação em essencia é igual a segunda, mas com a diferença que agora estamos utilizando o FastAPI e o Uvicorn.

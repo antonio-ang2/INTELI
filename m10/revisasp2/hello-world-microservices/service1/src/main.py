@@ -1,5 +1,4 @@
 # Aplicação 3 - CRUD de usuários com FastAPI e SQLite
-
 from fastapi import FastAPI, HTTPException, Response, status
 from pydantic import BaseModel
 from typing import List #Por estar utilizando o Python 3.8
@@ -95,4 +94,4 @@ def deletar_tarefa(id: int):
 # Iniciar a aplicação
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8004)
+    uvicorn.run(app, host="0.0.0.0", port=8001)
