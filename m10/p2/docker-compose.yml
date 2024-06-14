@@ -9,10 +9,6 @@ services:
     build: ./service2
     ports:
       - "8002:8002"
-  service3:
-    build: ./service3
-    ports:
-      - "8003:8003"
   gateway:
     build: ./gateway
     ports:

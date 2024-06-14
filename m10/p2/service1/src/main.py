@@ -1,27 +1,25 @@
 # Aplicação 3 - CRUD de usuários com FastAPI e SQLite
 from fastapi import FastAPI, HTTPException, Response, status
 from pydantic import BaseModel
-from typing import List #Por estar utilizando o Python 3.8
+from typing import List
 import sqlite3
 
 app = FastAPI()
 
 # Conexão com o banco de dados
 def conectar_bd():
-    return sqlite3.connect('tarefas.db')
+    return sqlite3.connect('blog.db')
 
 # Modelo Pydantic para validação de dados
-class Tarefa(BaseModel):
-    nome: str
-    hora: str
-    local: str
+class Blog(BaseModel):
+    title: str
+    content: str
 
 
-class TarefaDisplay(BaseModel):
+class BlogDisplay(BaseModel):
     id: int
-    nome: str
-    hora: str
-    local: str
+    title: str
+    content: str
 
 # Conexão CORS middleware
 @app.middleware("http")
@@ -33,60 +31,60 @@ async def add_cors_headers(request, call_next):
     return response
 
 # Rota para listar todos os usuários
-@app.get("/tarefas", response_model=List[TarefaDisplay])
-def listar_tarefas():
+@app.get("/blog", response_model=List[BlogDisplay])
+def listar_posts():
     con = conectar_bd()
     cursor = con.cursor()
-    cursor.execute('SELECT * FROM tarefas')
-    tarefas = [TarefaDisplay(id=row[0], nome=row[1], hora=row[2], local=row[3]) for row in cursor.fetchall()]
+    cursor.execute('SELECT * FROM blog')
+    post = [BlogDisplay(id=row[0], title=row[1], content=row[2]) for row in cursor.fetchall()]
     con.close()
-    return tarefas
+    return post
 
-# Rota para buscar um usuário pelo id
-@app.get("/tarefas/{id}", response_model=TarefaDisplay)
-def buscar_tarefa(id: int):
+# Rota para buscar um post pelo id
+@app.get("/blog/{id}", response_model=BlogDisplay)
+def buscar_post(id: int):
     con = conectar_bd()
     cursor = con.cursor()
-    cursor.execute('SELECT * FROM tarefas WHERE id = ?', (id,))
-    tarefa = cursor.fetchone()
+    cursor.execute('SELECT * FROM blog WHERE id = ?', (id,))
+    post = cursor.fetchone()
     con.close()
-    if tarefa:
-        return TarefaDisplay(id=tarefa[0], nome=tarefa[1], hora=tarefa[2], local=tarefa[3])
-    raise HTTPException(status_code=404, detail="Tarefa não encontrada")
+    if post:
+        return BlogDisplay(id=post[0], title=post[1], content=post[2])
+    raise HTTPException(status_code=404, detail="Post não encontrado")
 
 # Rota para cadastrar um usuário
-@app.post("/tarefas", response_model=TarefaDisplay, status_code=status.HTTP_201_CREATED)
-def cadastrar_tarefa(tarefa: Tarefa):
+@app.post("/blog", response_model=BlogDisplay, status_code=status.HTTP_201_CREATED)
+def cadastrar_post(post: Blog):
     con = conectar_bd()
     cursor = con.cursor()
-    cursor.execute('INSERT INTO tarefas (nome, hora, local) VALUES (?, ?, ?)', (tarefa.nome, tarefa.hora, tarefa.local))
-    tarefa_id = cursor.lastrowid
+    cursor.execute('INSERT INTO blog (title, content) VALUES (?, ?)', (post.title, post.content))
+    post_id = cursor.lastrowid
     con.commit()
     con.close()
-    return {**tarefa.dict(), "id": tarefa_id}
+    return {**post.dict(), "id": post_id}
 
 # Rota para atualizar um usuário
-@app.put("/tarefas/{id}", response_model=TarefaDisplay)
-def atualizar_tarefa(id: int, tarefa:Tarefa):
+@app.put("/blog/{id}", response_model=BlogDisplay)
+def atualizar_post(id: int, post:Blog):
     con = conectar_bd()
     cursor = con.cursor()
-    cursor.execute('UPDATE tarefas SET nome = ?, hora = ?, local = ? WHERE id = ?', (tarefa.nome, tarefa.hora, tarefa.local, id))
+    cursor.execute('UPDATE blog SET title = ?, content = ? WHERE id = ?', (post.title,post.content, id))
     if cursor.rowcount == 0:
         con.close()
-        raise HTTPException(status_code=404, detail="Tarefa não encontrada")
+        raise HTTPException(status_code=404, detail="Post não encontrado")
     con.commit()
     con.close()
-    return {**tarefa.dict(), "id": id}
+    return {**post.dict(), "id": id}
 
-# Rota para deletar um usuário
-@app.delete("/tarefas/{id}", status_code=status.HTTP_204_NO_CONTENT)
-def deletar_tarefa(id: int):
+# Rota para deletar um post
+@app.delete("/blog/{id}", status_code=status.HTTP_204_NO_CONTENT)
+def deletar_post(id: int):
     con = conectar_bd()
     cursor = con.cursor()
-    cursor.execute('DELETE FROM tarefas WHERE id = ?', (id,))
+    cursor.execute('DELETE FROM blog WHERE id = ?', (id,))
     if cursor.rowcount == 0:
         con.close()
-        raise HTTPException(status_code=404, detail="Tarefa não encontrada")
+        raise HTTPException(status_code=404, detail="Post não encontrado")
     con.commit()
     con.close()
     return Response(status_code=status.HTTP_204_NO_CONTENT)
