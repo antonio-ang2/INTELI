@@ -21,5 +21,6 @@ http://localhost:8000/service2
 
 Essa aplicação consiste em uma API assincrona de criação de posts em um blog, contento as seguintes informações referentes ao post: title e content. É uma aplicação dockerizada, com gateway e logs.
 
+PS: Murilão, ontem eu mandei uma pergunta no slack sobre como me redirecionar do gateway direto para a docs de um serviço e não entendi a resposta. Hoje, durante a prova, o Rafa tentou me ajuda e ainda assim estava dando errado, se puder considerar ficarei eternamente grato.
 [Demonstração](https://drive.google.com/file/d/1TU3FdR6Ipkz_gWLHqZDiqmba-uZynhVg/view?usp=sharing)
 
