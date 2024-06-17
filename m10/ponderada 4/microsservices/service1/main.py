@@ -4,7 +4,7 @@ from PIL import Image
 import io
 from rembg import remove
 
-app = FastAPI()
+app = FastAPI(root_path="/service1")
 
 @app.post("/process_image/")
 async def process_image(file: UploadFile = File(...)):
