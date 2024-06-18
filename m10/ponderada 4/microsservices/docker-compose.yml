@@ -12,6 +12,8 @@ services:
     build: ./service2
     ports:
       - "8002:8002"
+    volumes:
+      - ./service2/logs:/app/logs
     networks:
       - app-network
   

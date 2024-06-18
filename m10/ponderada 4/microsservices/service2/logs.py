@@ -1,7 +1,8 @@
 # src/logs.py
 import logging
 
-logging.basicConfig(level=logging.DEBUG)
+# Altera o arquivo de logs para salvar as mensagens em um arquivo
+logging.basicConfig(filename='logs/app.log', level=logging.DEBUG)
 
 logger = logging.getLogger(__name__)
 

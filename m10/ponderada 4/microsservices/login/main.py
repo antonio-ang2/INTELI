@@ -33,7 +33,7 @@ class User(BaseModel):
     password: str
 
 
-app = FastAPI()
+app = FastAPI(root_path="/login")
 
 # Configuração do logger
 logging.basicConfig(filename='app.log', level=logging.INFO, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
