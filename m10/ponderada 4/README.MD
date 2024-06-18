@@ -6,15 +6,7 @@ Aluno | Curso | Módulo | Turma
 Antonio Angelo Teixeira | Engenharia da Computação | 10 | 2
 
 ## Estrutura de Pastas
-```
-📦microsservices
- ┣ 📜Dockerfile
- ┣ 📜minha_api.pkl
- ┣ 📜minha_api.py
- ┣ 📜modelo_2.pkl
- ┣ 📜requirements.txt
- ┣ 📜READ.MD
-```
+
 ## EXPLICAÇÃO DA ATIVIDADE
 
 A atividade proposta demanda conceitos de docker, microsserviços e log. O objetivo criar uma API em microsserviços, com um gateway para lidar com o redirecionamento, um sistema de logs para a aplicação e um compose para subir a aplicação toda. Nesse sentido, optei por fazer três microsserviços e 
@@ -23,17 +15,23 @@ A atividade proposta demanda conceitos de docker, microsserviços e log. O objet
 # RODANDO A APLICAÇÃO
 
 ```bash
-# Optei por não criar um env dessa vez, porém, o passo a passo segue parecido com as demais prova.
-# criando o banco de dados de blog da nossa aplicação
-python cria_banco.py #Esse passo só é necessário se o banco não estiver criado;
-# Tudo pronto, após isso basta voltar para raiz e executar
+# Para rodar a aplicação basta rodar o docker compose para subir a aplicação, da seguinte forma:
 docker compose up
 # Pronto, agora se você tiver uma ferramenta(por exemplo, Docker desktop) pode ver o container criado e acessá-lo em:
-http://localhost:8000/
-# Essa URI nos manda para o gateway, podendo acessar dois serviços diferentes bastando adicionar:
-http://localhost:8000/service1
+http://localhost:80
+# Essa URI nos manda para o gateway, podendo acessar três serviços diferentes bastando adicionar:
+http://localhost:8000/service1/docs
 # ou 
 http://localhost:8000/service2
+#ou
+http://localhost:8000/login
 ```
+
+# MICROSSERVIÇOS
+Os microsserviços da aplicação são três e consistem em: um login, usando token para controlar acesso, service2 que serve como um pedido de socorro e logs e, por último o service1 que consiste em uma api de removedor de fundo.
+
+
+[Demonstração](https://drive.google.com/file/d/1otx8CijPy9iEKKFyEFPoFtBA-Mw8uZyD/view?usp=sharing)
+
 
 

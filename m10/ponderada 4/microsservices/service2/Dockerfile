@@ -1,4 +1,4 @@
-# service1/Dockerfile
+# service2/Dockerfile
 
 FROM python:3.8-slim
 
@@ -10,4 +10,4 @@ RUN pip install -r requirements.txt
 
 COPY . .
 
-CMD ["python", "main.py"]
+CMD ["python", "main.py"]   
