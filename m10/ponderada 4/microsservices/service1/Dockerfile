@@ -9,6 +9,8 @@ COPY ./requirements.txt /app/requirements.txt
 
 # Install dependencies
 RUN pip install --no-cache-dir -r /app/requirements.txt
+RUN pip install python-multipart
+
 
 # Copy the application code
 COPY ./main.py /app/main.py

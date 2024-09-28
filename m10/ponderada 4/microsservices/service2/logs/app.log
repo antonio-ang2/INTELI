@@ -1,3 +1,7 @@
 DEBUG:asyncio:Using selector: EpollSelector
 INFO:logs:Acessando a rota /
 INFO:logs:Acessando a rota /
+DEBUG:asyncio:Using selector: EpollSelector
+DEBUG:asyncio:Using selector: EpollSelector
+DEBUG:asyncio:Using selector: EpollSelector
+INFO:logs:Acessando a rota /
