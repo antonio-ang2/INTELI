@@ -28,4 +28,4 @@ Para executar esse projeto, é necessário executar os dois pacotes em terminais
 
 ## VÍDEO DE DEMONSTRAÇÃO    
 
-(https://drive.google.com/file/d/1rAhAzNamRjSGZrm9ziTYLxfuygKorCPF/view?usp=sharing)
+https://drive.google.com/file/d/1rAhAzNamRjSGZrm9ziTYLxfuygKorCPF/view?usp=sharing
